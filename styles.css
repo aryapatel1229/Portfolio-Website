@@ -1,0 +1,39 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+
+/* Bubble letters CSS */
+.bubble-letters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bubble-letters span {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+    position: relative;
+}
+
+.bubble-letters span::before,
+.bubble-letters span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #808000; /* Olive green */
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(1.1);
+}
+
+.bubble-letters span::after {
+    transform: scale(1.3);
+    opacity: 0.5;
+}
