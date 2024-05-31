@@ -1,6 +1,165 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
 
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.row > div {
+    padding: 0 15px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+/* Work Section */
+.work {
+    padding: 50px 0;
+}
+
+.work h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.work .project {
+    margin-bottom: 30px;
+}
+
+.work .project img {
+    width: 100%;
+    height: auto;
+}
+
+.work .project h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.work .project p {
+    color: #666;
+}
+
+.work .project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #808000; /* Olive green */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.work .project a:hover {
+    background-color: #6b6b00; /* Darker Olive green */
+}
+
+/* Footer (Contact) Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Bubble letters CSS */
 .bubble-letters {
     display: flex;
@@ -37,3 +196,176 @@
     transform: scale(1.3);
     opacity: 0.5;
 }
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Arya Patel">
+  <meta name="description" content="Arya Patel, UX Design, UI Design, designer, portfolio, Georgia, remote, Atlanta">
+  <title>Arya Patel's UX Design Portfolio About Me</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="img/favicon.ico" rel="shortcut icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/d82613f868.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* General Styles */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+
+    .row > div {
+      padding: 0 15px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    /* Header and Navigation */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img.logo {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px 0;
+      background-color: #f4f4f4;
+    }
+
+    .about h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about img.resize {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+
+    .about p {
+      font-size: 1.25rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .about ul {
+      padding-left: 20px;
+    }
+
+    .about ul li {
+      font-size: 1.25rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    footer li {
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .contact .icon {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
