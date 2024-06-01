@@ -6,6 +6,12 @@
   <meta charset="utf-8">
   <meta name="author" content="Arya Patel">
   <meta name="description" content="Arya Patel, UX Design, UI Design, designer, portfolio, Georgia, remote, Atlanta">
+  <meta name="keywords" content="UX Design, UI Design, Portfolio, Arya Patel, Designer, Atlanta, Remote">
+  <meta property="og:title" content="Arya Patel's UX Design Portfolio Case Studies">
+  <meta property="og:description" content="Showcasing UX and UI design projects by Arya Patel.">
+  <meta property="og:image" content="img/portfolio/portfoliocover@2x.jpg">
+  <meta property="og:url" content="http://www.aryapatelportfolio.com">
+  <meta property="og:type" content="website">
   <title>Arya Patel's UX Design Portfolio Case Studies</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -19,50 +25,52 @@
   <script src="https://kit.fontawesome.com/d82613f868.js" crossorigin="anonymous"></script>
 </head>
 
-<!--Header-->
-<header>
-  <div class="container">
-    <div class="navtoggle" id="myNavtoggle">
-      <a href="index.html">
-        <img src="img/logo.svg" alt="Arya Patel: UX Designer" class=logo>
-      </a>
-
-      <nav>
-        <ul>
-          <li><a href="about.html" class="item">About</a></li>
-          <li><a href="work.html" class="item">Work</a></li>
-          <li><a href="#contact" class="item">Contact</a></li>
-          <li><a href="javascript:void(0);" onClick="hamburger()">
-              <div class="hamburger icon">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-            </a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-
 <body>
+  <!--Header-->
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="Arya Patel: UX Designer" class="logo">
+        </a>
 
-
+        <nav>
+          <ul>
+            <li><a href="about.html" class="item">About</a></li>
+            <li><a href="work.html" class="item">Work</a></li>
+            <li><a href="#contact" class="item">Contact</a></li>
+            <li><a href="javascript:void(0);" onClick="hamburger()" aria-label="Toggle navigation">
+                <div class="hamburger icon">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
   <!--Work-->
   <div id="work">
     <div class="container">
       <div>
-        <h1 class="center">My work</h1>
+        <h1 class="center">My Work</h1>
 
-
+        <!--Project 1-->
+        <div class="row">
+          <picture class="column col-md-6 col-lg-7 col-xl-7">
+            <source srcset="img/olive/olive@1x.png" media="(max-width:767px)">
+            <img src="img/olive/olivecover@2x.png" alt="OLIVE: Mental Health and Fitness App by Arya Patel">
+          </picture>
 
           <div class="column col-md-6 col-lg-5 col-xl-5">
-            <h2>Designing OLIVE from start to finish</h2>
+            <h2>Designing OLIVE from Start to Finish</h2>
             <p>
               OLIVE is a mental health and fitness app I designed from user research to high-fidelity prototype with multiple rounds of iterations. It is a mobile-first responsive web app.
             </p>
-            <a href="OLIVE.HTML" class="button">Read More</a>
+            <a href="olive.html" class="button">Read More</a>
           </div>
         </div>
 
@@ -70,13 +78,13 @@
         <div class="row">
           <picture class="column col-md-6 col-lg-7 col-xl-7">
             <source srcset="img/portfolio/portfoliocover@1x.jpg" media="(max-width:767px)">
-            <img src="img/portfolio/portfoliocover@2x.jpg" alt="Portfolio Website: Designing and coding a responsive website by Arya Patel">
+            <img src="img/portfolio/portfoliocover@2x.jpg" alt="Portfolio Website: Designing and Coding a Responsive Website by Arya Patel">
           </picture>
 
           <div class="column col-md-6 col-lg-5 col-xl-5">
-            <h2>Desigining and Coding my own portfolio website</h2>
+            <h2>Designing and Coding My Own Portfolio Website</h2>
             <p>
-              I <span class="highlight">designed, coded and tested a website</span> to showcase my skills as a UX Designer.
+              I <span class="highlight">designed, coded, and tested a website</span> to showcase my skills as a UX Designer.
             </p>
             <a href="portfolio.html" class="button">Read More</a>
           </div>
@@ -86,15 +94,15 @@
         <div class="row">
           <picture class="column col-md-6 col-lg-7 col-xl-7">
             <source srcset="img/flashlab/flashlab@1x.png" media="(max-width:767px)">
-            <img src="img/flashlab/flashlabcover@2x.png" alt="Flashlab App: Learning the Design Thinking process by Arya Patel">
+            <img src="img/flashlab/flashlabcover@2x.png" alt="FLASHLAB: Learning the Design Thinking Process by Arya Patel">
           </picture>
 
           <div class="column col-md-6 col-lg-5 col-xl-5">
-            <h2>Project-based learning through FLASHLAB</h2>
+            <h2>Project-Based Learning Through FLASHLAB</h2>
             <p>
               FLASHLAB is a vocabulary learning mobile app made following the Design Thinking Process.
             </p>
-            <a href="Flashlab.html" class="button">Read More</a>
+            <a href="flashlab.html" class="button">Read More</a>
           </div>
         </div>
       </div>
@@ -104,18 +112,17 @@
   <!--JQuery & JavaScript-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
-
 </body>
 
 <!--Footer-->
 <footer id="contact">
   <div class="container center">
     <div>
-      <h1>Get in touch</h1>
+      <h1>Get in Touch</h1>
       <span>
         Get in touch to get to know me better or to work with me!
       </span>
-      <a href="mailto:aryapatel@gmail.com">Contact me</a>
+      <a href="mailto:aryapatel@gmail.com">Contact Me</a>
     </div>
 
     <!--Socials-->
